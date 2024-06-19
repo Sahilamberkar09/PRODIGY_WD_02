@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stopwatch</title>
     <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
+</head>
+<body>
+  <div class="container">
+
     <div class="watch">
-      <div class="outer-circle">
-        <div class="timer">
-          <span class="text minute">01 :</span>
-          <span class="text sec">&nbsp;47 :</span>
-          <span class="text msec">&nbsp;97</span>
+        <div class="outer-circle">
+            <div class="timer">
+                <span class="text minute">0 :&nbsp;</span>
+                <span class="text sec">0 :&nbsp;</span>
+                <span class="text msec">&nbsp;0</span>
+            </div>
         </div>
-      </div>
-      <div class="button-wrapper">
-        <button class="button">Reset</button>
-        <button class="button">Play</button>
-        <button class="button">Lap</button>
-      </div>
+        <div class="button-wrapper">
+            <button class="button reset hidden">Reset</button>
+            <button class="button play">Play</button>
+            <button class="button lap hidden">Lap</button>
+        </div>
+        <ul class="laps">
+            <!-- Lap items will be added here dynamically -->
+        </ul>
+        <button class="lap-clear-button hidden">Clear All</button>
     </div>
-  </body>
+  </div>
+    <script src="js/app.js"></script>
+</body>
 </html>
