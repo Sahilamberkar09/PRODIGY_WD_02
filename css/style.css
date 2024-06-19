@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 * {
   margin: 0;
@@ -23,40 +22,42 @@ body {
   align-items: center;
 }
 
-.watch{
+.watch {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.container{
+.container {
   padding: 5%;
   border-radius: 50px;
-background: #fff;
-position: relative;
-isolation: isolate;
+  background: #fff;
+  position: relative;
+  isolation: isolate;
 }
-.container::after{
-  content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    background: linear-gradient(45deg, rgba(94,87,180,255),rgba(153,102,197,255));
-    border-radius: 50px 50px 186px 186px;
-    z-index: -1;
+.container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(
+    45deg,
+    rgba(94, 87, 180, 255),
+    rgba(153, 102, 197, 255)
+  );
+  border-radius: 50px 50px 186px 186px;
+  z-index: -1;
 }
-
 
 .outer-circle {
   width: var(--width);
   height: 200px;
   border-radius: 50%;
-background: #e0e0e0;
-box-shadow: inset 20px 20px 60px #bebebe,
-            inset -20px -20px 60px #ffffff;
+  background: #e0e0e0;
+  box-shadow: inset 20px 20px 60px #bebebe, inset -20px -20px 60px #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,7 +74,6 @@ box-shadow: inset 20px 20px 60px #bebebe,
   color: #000;
   font-size: 35px;
 }
-
 
 .button-wrapper {
   width: 250px;
@@ -111,7 +111,6 @@ box-shadow: inset 20px 20px 60px #bebebe,
   padding: 30px 0;
   font-family: "Lato";
   font-weight: 600;
-  
 }
 
 .laps::-webkit-scrollbar {
@@ -123,11 +122,8 @@ box-shadow: inset 20px 20px 60px #bebebe,
   width: 100%;
   padding: 10px;
   text-align: center;
-  
-
   background: #e0e0e0;
-  box-shadow: inset 20px 20px 60px #dcdcdc,
-              inset -20px -20px 60px #ffffff;
+  box-shadow: inset 20px 20px 60px #dcdcdc, inset -20px -20px 60px #ffffff;
   border-radius: 50px;
   margin-bottom: 15px;
   background-color: rgba(0, 0, 0, 0.3);

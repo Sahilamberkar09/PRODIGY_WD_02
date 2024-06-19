@@ -54,7 +54,9 @@ const play = () => {
 };
 
 const reset = () => {
-  if (isPlay) play(); // Pause if the stopwatch is running
+  if (isPlay) {
+    play();
+  }
   lapButton.classList.add("hidden");
   resetButton.classList.add("hidden");
   lapClearButton.classList.add("hidden");
@@ -64,7 +66,7 @@ const reset = () => {
   minute.innerText = "0 : ";
   second.innerText = "0 : ";
   centiSecond.innerText = "0";
-  lapsList.innerHTML = ''; // Clear laps list
+  lapsList.innerHTML = ''; 
   lapCount = 0;
 };
 
